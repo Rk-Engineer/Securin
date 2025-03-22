@@ -74,7 +74,7 @@ cursor.execute("SELECT id, title, cuisine, rating FROM recipes ORDER BY id DESC"
 rows = cursor.fetchall()
 
 # Show stored recipes in a table
-st.subheader("📋 Stored Recipes")
+# st.subheader("📋 Stored Recipes")
 
 cursor.execute('SELECT id, title, cuisine, rating, total_time, serves FROM recipes ORDER BY id DESC')
 rows = cursor.fetchall()
